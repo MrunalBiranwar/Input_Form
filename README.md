@@ -7,8 +7,11 @@ HTML input forms use various tags to capture and structure user data in a consis
 <input>: Used to capture data in various formats depending on the type attribute:
 
 type="text": Single-line text input.
+
 type="password": Hides input characters, commonly used for passwords.
+
 type="email": Accepts only email-formatted text.
+
 type="number": Allows only numeric input, often with min/max values.
 type="radio": Creates radio buttons for selecting one option from a group.
 type="checkbox": Creates checkboxes for selecting multiple options.
