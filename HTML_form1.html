@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+</head>
+<body>
+    <table border="1">
+        <form action="/vscode/Mrunal/mrunal_baskend.php"></form>
+        <thead>
+        <tr style="background-color: blueviolet;">
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tr>
+            <td><label for="text">Name</label></td>
+            <td><input type="text" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Sex</td>
+            <td>
+                <input type="radio" name="Sex" id="gender" value="Male">
+                <label for="gender">Male</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="Sex" id="gender" value="female">
+                <label for="gender">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Eye color</td>
+            <td>
+                <select name="color" id="color">
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Black">Black</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">Check all that apply</td>
+            <td><input type="checkbox" name="body" id="body">
+            <label for="body">Over 6 Feet tall</label>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="body" id="body">
+            <label for="body">Over 200 pounds</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="Discription" >Discribe your athletic ability:</label></td>
+        </tr>
+        <tr>
+            <td colspan="2"><textarea name="Discription" id="Discription" cols="36" rows="5"></textarea></td>
+        </tr>
+        <tr>
+           <!-- <td colspan="2" style="text-align: center;"> <button type="submit">Enter my information</button>
+           </td> -->
+           <td colspan="2" style="text-align: center;"><input type="submit" name="submit" value="Enter my information"></td>
+        </tr>
+
+    </table> <br>
+    <table border="1">
+        <form action="/vscode/Mrunal/mrunal_baskend.php">
+            <thead>
+            <tr>
+                <th colspan="2">Fill the form below</th>
+            </tr>
+        </thead>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="passward"></label>Passward</td>
+                <td><input type="password" name="passward id="passward"></td>
+            </tr>
+            <tr>
+                <td><label for="feedback">Feedback</label></td>
+                <td><textarea name="feedback" id="feedback" cols="33" rows="5" style="overflow-y: scroll; overflow-x: scroll; word-wrap: normal;"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" id="gender" value="Male">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" id="gender" value="female">
+                    <label for="gender">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="subject"></label>Subject</td>
+                <td>
+                    <input type="checkbox" name="subject" id="subject">
+                    <label for="subject">Web</label>
+                    <input type="checkbox" name="subject" id="subject">
+                    <label for="subject">Math</label>
+                    <input type="checkbox" name="subject" id="subject">
+                    <label for="subject">Graphics</label>
+                    <input type="checkbox" name="subject" id="subject">
+                    <label for="subject">English</label>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td colspan="2"><button type="reset">Reset All</button> 
+                <button type="submit">Submit Above Details</button></td>
+            </tr>
+            
+        </form>
+    </table>
+    <br>
+    <form action="/vscode/Mrunal/mrunal_baskend.php">
+    <fieldset>
+        <legend><h2>voter identities</h2></legend>
+        <ol type="1">
+            <li><label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </li>
+            <li><label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </li>
+            <li><label for="Number">Mobile no. :</label>
+                <input type="tel" name="Number" id="Number">
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <legend><h2>Address of living</h2></legend>
+            <ol type="1">
+                <li><label for="Address">Address :</label>
+                    <textarea name="Address" id="" cols="30" rows="5"></textarea>
+                </li>
+                <li>
+                    <label for="code">Postal Code:</label>
+                    <input type="number" name="code" id="code">
+                </li>
+                <li>
+                    <label for="pays">pays:</label>
+                    <input type="number" name="pays" id="pays">
+                </li>
+            </ol>
+    </fieldset>
+    <fieldset>
+      <legend> <h2>Information of CB</h2></legend> 
+      <ol type="1">
+           <li> <fieldset> 
+                <legend>
+               <h3>Type of Bank card</h3>
+              
+            
+        </legend>
+               <ol type="1">
+                <li><input type="radio" name="visa" id="visa">
+                    <label for="visa">VISA</label>
+                </li>
+                <LI><input type="radio" name="amex" id="amex">
+                    <label for="amex">AmEx</label>
+                </LI>
+                <LI><input type="radio" name="Mastarcard" id="Mastarcard">
+                    <label for="Mastarcard">Mastercard</label>
+                </LI>
+               </ol>
+            </fieldset>
+        </li>
+        </ol>
+            <ol type="1" start="2">
+                <li><label for="card">No. of Card:</label>
+                    <input type="number" name="card" id="card">
+                </li>
+                <li><label for="card">Code of Card:</label>
+                    <input type="number" name="code" id="code"></li>
+                <li><label for="name">Name of Account Holder:</label>
+                    <input type="name" name="name" id="name" placeholder="Enter the name of Account holder"></li>
+            </ol>
+        </ol>
+    </fieldset>
+    <fieldset style="text-align: center;">
+        <button type="submit" style="background-color: rgb(155, 152, 149);">Check !</button>
+    </fieldset>
+</form>
+<br><br>
+
+<h2>The Datalist Element</h2>
+<input list="List of Course">
+<datalist id="List of Course">
+    <option value="HTML">
+    <option value="CSS">
+    <option value="JAVA">
+    <option value="JAVASCRIPT">
+    <option value="PYTHON">
+</datalist>
+<br>
+<h2>The Output Element</h2>
+<form action="/vscode/Mrunal/mrunal_baskend.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="20" min="0" max="50">
+    50 +
+    <input type="number" id="b" name="b" value="20">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+
+</form>
+<br><br><br>
+
+</body>
+</html>
